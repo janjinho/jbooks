@@ -1,38 +1,227 @@
-.App {
-  text-align: center;
+/* Garantir que o fundo cubra toda a altura da página */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Aplicar tema escuro no fundo do body */
+body.tema-escuro {
+  background-color: #222;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Tema claro */
+.tema-claro {
+  background-color: #f0f0f0; /* Fundo claro */
+  color: #000;
+}
+
+/* Tema escuro */
+.tema-escuro {
+  background-color: #222; /* Fundo escuro */
+  color: #fff;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+header input,
+header select,
+header button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #e4e4e4;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header select,
+header button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover, select:hover {
+  transform: translateY(5px); /* Efeito hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
+  
+}
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 0px; /* Reduzido para trazer os livros para mais perto do header */
+}
+
+
+.book {
+  width: 150px;
+  height: 220px;
+  margin: 15px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 10px;
+  color: #000;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.9);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.book:hover {
+  transform: translateY(5px); /* Efeito hover para afundar */
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Sombra reduzida */
+}
+.tema-escuro .book:hover {
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Sombra reduzida */
+}
+.tema-escuro .book {
+  color: floralwhite;
+}
+
+/* Cores para as categorias no tema claro */
+.ficcao {
+  background-color: #e7fc4d;
+
+}
+
+.romance {
+  background-color: #ff64a2;
+}
+
+.aventura {
+  background-color: #5492ff;
+}
+
+.fantasia {
+  background-color: #b163ff;
+}
+
+.nao-ficcao {
+  background-color: #c79e7f;
+}
+
+.ciencia {
+  background-color: #7fff5f;
+}
+
+.historia {
+  background-color: #d76a48;
+}
+
+.autoajuda {
+  background-color: #67ffb6;
+}
+
+.biografia {
+  background-color: #ffefdc;
+}
+
+.sem-categoria {
+  background-color: #d3d3d3;
+}
+
+/* Cores mais escuras para as categorias no tema escuro */
+.tema-escuro .ficcao {
+  background-color: #adb82d9b;
+  box-shadow: 0 3px 7px #edff67;
+}
+
+.tema-escuro .romance {
+  background-color: #b347769e;
+  box-shadow: 0 3px 7px #ff7bb0;
+}
+
+.tema-escuro .aventura {
+  background-color: #3c6abf;
+  box-shadow: 0 3px 7px #76a7fc;
+}
+
+.tema-escuro .fantasia {
+  background-color: #7d41c197;
+  box-shadow: 0 3px 7px #be7dff;
+}
+
+.tema-escuro .nao-ficcao {
+  background-color: #87684ca8;
+  box-shadow: 0 3px 7px #c79e7f;
+}
+
+.tema-escuro .ciencia {
+  background-color: #53c74693;
+  box-shadow: 0 3px 7px #a3ff8d;
+}
+
+.tema-escuro .historia {
+  background-color: #9e4b2fad;
+  box-shadow: 0 3px 7px #ff997a;
+}
+
+.tema-escuro .autoajuda {
+  background-color: #45b182a8;
+  box-shadow: 0 3px 7px  #a0ffd1;
+}
+
+.tema-escuro .biografia {
+  background-color: #c0af9290;
+  box-shadow: 0 3px 7px #ffefdc;
+}
+
+.tema-escuro .sem-categoria {
+  background-color: #9a9a9a95;
+  box-shadow: 0 3px 7px #e7e7e7;
+}
+
+.tema-escuro header{
+  background-color: #323232;
+  color: rgb(255, 255, 255);
+}
+.tema-escuro button{
+  background-color: #222;
   color: white;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tema-escuro select{
+  background-color: #222;
+  color: white;
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.687);
+}
+button:hover, select:hover {
+  transform: translateY(5px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.0);
+  
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tema-escuro input{
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+  background-color: #222;
+  color: white;
 }
