@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { createStore } from 'redux';
 import { Provider, useDispatch, useSelector } from 'react-redux';
-import './App.css'; // Importando o arquivo CSS
+import './App.css'; 
 
 // Estado inicial
 const initialState = {
@@ -26,7 +26,6 @@ const bookReducer = (state = initialState, action) => {
   }
 };
 
-// Criando o store
 const store = createStore(
   bookReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
@@ -42,7 +41,7 @@ function App() {
   const handleAddBook = () => {
     dispatch({ type: 'ADD_BOOK', payload: { name: bookName || 'Sem título', category: bookCategory } });
     setBookName('');
-    setBookCategory('ficcao'); // Resetando a categoria
+    setBookCategory('ficcao');
   };
 
   const handleKeyPress = (e) => {
@@ -59,6 +58,9 @@ function App() {
     <div className={`app-container ${themeDark ? 'tema-escuro' : 'tema-claro'}`}>
       <header>
         <h1>Lista de livros</h1>
+        <button onClick={() => setThemeDark(!themeDark)}>
+          {themeDark ? 'Tema Claro' : 'Tema Escuro'}
+        </button>
         <input
           type="text"
           value={bookName}
@@ -76,20 +78,19 @@ function App() {
           <option value="historia">História</option>
           <option value="autoajuda">Autoajuda</option>
           <option value="biografia">Biografia</option>
-          <option value="sem-categoria">Sem Categoria</option> {/* Nova categoria */}
+          <option value="sem-categoria">Sem Categoria</option>
         </select>
+       
         <button onClick={handleAddBook}>Adicionar Livro</button>
-        <button onClick={() => setThemeDark(!themeDark)}>
-          {themeDark ? 'Tema Claro' : 'Tema Escuro'}
-        </button>
+        
       </header>
 
       <div className="books-container">
         {books.map((book, index) => (
           <div
             key={index}
-            className={`book ${book.category}`} // Usando classes para categorias
-            onClick={() => handleRemoveBook(index)} // Remover ao clicar
+            className={`book ${book.category}`} 
+            onClick={() => handleRemoveBook(index)} 
           >
             <h3>{book.name}</h3>
           </div>

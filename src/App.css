@@ -1,11 +1,9 @@
-/* Garantir que o fundo cubra toda a altura da página */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-/* Aplicar tema escuro no fundo do body */
 body.tema-escuro {
   background-color: #222;
 }
@@ -17,15 +15,13 @@ body.tema-escuro {
   justify-content: space-between;
 }
 
-/* Tema claro */
 .tema-claro {
-  background-color: #f0f0f0; /* Fundo claro */
+  background-color: #dbdbdb; 
   color: #000;
 }
 
-/* Tema escuro */
 .tema-escuro {
-  background-color: #222; /* Fundo escuro */
+  background-color: #222; 
   color: #fff;
 }
 
@@ -39,6 +35,7 @@ header {
   margin-top: 20px;
   margin-left: 30px;
   margin-right: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 header input,
@@ -47,7 +44,7 @@ header button {
   margin: 5px;
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
   border-radius: 20px;
   background-color: #e4e4e4;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
@@ -75,7 +72,7 @@ button:hover, select:hover {
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
-  margin-top: 0px; /* Reduzido para trazer os livros para mais perto do header */
+  margin-top: 0px; 
 }
 
 
@@ -93,22 +90,23 @@ button:hover, select:hover {
   text-align: center;
   box-shadow: 0 3px 7px rgba(0, 0, 0, 0.9);
   transition: transform 0.2s, box-shadow 0.2s;
+  padding: 5px;
 }
 
 .book:hover {
-  transform: translateY(5px); /* Efeito hover para afundar */
-  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Sombra reduzida */
+  transform: translateY(5px); 
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
 }
 .tema-escuro .book:hover {
-  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1); /* Sombra reduzida */
+  box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
 }
 .tema-escuro .book {
   color: floralwhite;
 }
 
-/* Cores para as categorias no tema claro */
+
 .ficcao {
-  background-color: #e7fc4d;
+  background-color: #fffc52;
 
 }
 
@@ -148,40 +146,40 @@ button:hover, select:hover {
   background-color: #d3d3d3;
 }
 
-/* Cores mais escuras para as categorias no tema escuro */
+/* tema escuro */
 .tema-escuro .ficcao {
-  background-color: #adb82d9b;
-  box-shadow: 0 3px 7px #edff67;
+  background-color: #cab530b6;
+  box-shadow: 0 3px 7px #f4ffa3;
 }
 
 .tema-escuro .romance {
   background-color: #b347769e;
-  box-shadow: 0 3px 7px #ff7bb0;
+  box-shadow: 0 3px 7px #ffa4c9;
 }
 
 .tema-escuro .aventura {
   background-color: #3c6abf;
-  box-shadow: 0 3px 7px #76a7fc;
+  box-shadow: 0 3px 7px #a6c7ff;
 }
 
 .tema-escuro .fantasia {
   background-color: #7d41c197;
-  box-shadow: 0 3px 7px #be7dff;
+  box-shadow: 0 3px 7px #c78fff;
 }
 
 .tema-escuro .nao-ficcao {
   background-color: #87684ca8;
-  box-shadow: 0 3px 7px #c79e7f;
+  box-shadow: 0 3px 7px #f7c39b;
 }
 
 .tema-escuro .ciencia {
   background-color: #53c74693;
-  box-shadow: 0 3px 7px #a3ff8d;
+  box-shadow: 0 3px 7px #b7ffa4;
 }
 
 .tema-escuro .historia {
   background-color: #9e4b2fad;
-  box-shadow: 0 3px 7px #ff997a;
+  box-shadow: 0 3px 7px #ffac92;
 }
 
 .tema-escuro .autoajuda {
@@ -196,7 +194,7 @@ button:hover, select:hover {
 
 .tema-escuro .sem-categoria {
   background-color: #9a9a9a95;
-  box-shadow: 0 3px 7px #e7e7e7;
+  box-shadow: 0 3px 7px #ffffff;
 }
 
 .tema-escuro header{
@@ -224,4 +222,7 @@ button:hover, select:hover {
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
   background-color: #222;
   color: white;
+}
+.tema-escuro header{
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
 }
