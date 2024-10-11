@@ -1,3 +1,5 @@
+/*NOMES: João Vitor Anchieta Oliveira
+Gabriel de frança, Eduarda Gonçalves e Jennifer lacerda*/ 
 import React, { useState } from 'react';
 import { createStore } from 'redux';
 import { Provider, useDispatch, useSelector } from 'react-redux';

@@ -1,3 +1,6 @@
+/*NOMES: João Vitor Anchieta Oliveira
+Gabriel de frança, Eduarda Gonçalves e Jennifer lacerda*/ 
+
 html, body {
   height: 100%;
   margin: 0;
@@ -71,7 +74,7 @@ button:hover, select:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 90px;
   margin-top: 0px; 
 }
 
@@ -106,94 +109,94 @@ button:hover, select:hover {
 
 
 .ficcao {
-  background-color: #fffc52;
+  background-color: #fffc52de;
 
 }
 
 .romance {
-  background-color: #ff64a2;
+  background-color: #ff64a2d0;
 }
 
 .aventura {
-  background-color: #5492ff;
+  background-color: #5493ffd0;
 }
 
 .fantasia {
-  background-color: #b163ff;
+  background-color: #b163ffce;
 }
 
 .nao-ficcao {
-  background-color: #c79e7f;
+  background-color: #c79e7fd5;
 }
 
 .ciencia {
-  background-color: #7fff5f;
+  background-color: #7fff5fd5;
 }
 
 .historia {
-  background-color: #d76a48;
+  background-color: #d76948dc;
 }
 
 .autoajuda {
-  background-color: #67ffb6;
+  background-color: #67ffb6dc;
 }
 
 .biografia {
-  background-color: #ffefdc;
+  background-color: #ffefdce0;
 }
 
 .sem-categoria {
-  background-color: #d3d3d3;
+  background-color: #d3d3d3da;
 }
 
 /* tema escuro */
 .tema-escuro .ficcao {
-  background-color: #cab530b6;
+  background-color: #cab530c4;
   box-shadow: 0 3px 7px #f4ffa3;
 }
 
 .tema-escuro .romance {
-  background-color: #b347769e;
+  background-color: #b34776c9;
   box-shadow: 0 3px 7px #ffa4c9;
 }
 
 .tema-escuro .aventura {
-  background-color: #3c6abf;
+  background-color: #3c6abfcc;
   box-shadow: 0 3px 7px #a6c7ff;
 }
 
 .tema-escuro .fantasia {
-  background-color: #7d41c197;
+  background-color: #7d41c1c4;
   box-shadow: 0 3px 7px #c78fff;
 }
 
 .tema-escuro .nao-ficcao {
-  background-color: #87684ca8;
+  background-color: #87674cc0;
   box-shadow: 0 3px 7px #f7c39b;
 }
 
 .tema-escuro .ciencia {
-  background-color: #53c74693;
+  background-color: #53c746c2;
   box-shadow: 0 3px 7px #b7ffa4;
 }
 
 .tema-escuro .historia {
-  background-color: #9e4b2fad;
+  background-color: #9e4b2fc2;
   box-shadow: 0 3px 7px #ffac92;
 }
 
 .tema-escuro .autoajuda {
-  background-color: #45b182a8;
+  background-color: #45b196bb;
   box-shadow: 0 3px 7px  #a0ffd1;
 }
 
 .tema-escuro .biografia {
-  background-color: #c0af9290;
+  background-color: #c0af92be;
   box-shadow: 0 3px 7px #ffefdc;
 }
 
 .tema-escuro .sem-categoria {
-  background-color: #9a9a9a95;
+  background-color: #9a9a9abe;
   box-shadow: 0 3px 7px #ffffff;
 }
 
@@ -225,4 +228,19 @@ button:hover, select:hover {
 }
 .tema-escuro header{
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.3);
+}
+.tema-claro {
+  background-color: #dbdbdb;
+  background-image: url('/public/jennie-mantrar.jpg'); /* Nome atualizado */
+  background-size: cover;
+  background-position: center;
+  color: #000;
+}
+
+.tema-escuro {
+  background-color: #222;
+  background-image: url('/public/jennie-mantra-carro.jpg'); /* Nome atualizado */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
 }
