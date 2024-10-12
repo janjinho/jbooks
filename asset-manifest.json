@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/nome-do-repositorio/static/css/main.d822da1b.css",
+    "main.js": "/nome-do-repositorio/static/js/main.e6ac0260.js",
+    "static/js/453.ed3810f9.chunk.js": "/nome-do-repositorio/static/js/453.ed3810f9.chunk.js",
+    "static/media/jennie-mantra-carro.jpg": "/nome-do-repositorio/static/media/jennie-mantra-carro.fa1166ea0032044bed5c.jpg",
+    "static/media/jennie-mantrar.jpg": "/nome-do-repositorio/static/media/jennie-mantrar.5596f5c942371baf88bd.jpg",
+    "index.html": "/nome-do-repositorio/index.html",
+    "main.d822da1b.css.map": "/nome-do-repositorio/static/css/main.d822da1b.css.map",
+    "main.e6ac0260.js.map": "/nome-do-repositorio/static/js/main.e6ac0260.js.map",
+    "453.ed3810f9.chunk.js.map": "/nome-do-repositorio/static/js/453.ed3810f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d822da1b.css",
+    "static/js/main.e6ac0260.js"
+  ]
+}
