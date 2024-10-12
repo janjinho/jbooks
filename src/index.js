@@ -4,14 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Se estiver usando o react-router-dom, configure o basename (opcional)
+import { BrowserRouter as Router } from 'react-router-dom';
+
+// Cria a raiz do app
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    {/* Router pode ser necessário se você estiver usando rotas */}
+    <Router basename={process.env.PUBLIC_URL}>
+      <App />
+    </Router>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Inicia a medição de performance da aplicação
 reportWebVitals();
